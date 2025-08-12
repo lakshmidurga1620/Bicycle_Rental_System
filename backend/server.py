@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["http://localhost:3000"]}})
 
 # Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb+srv://lakshmidurga1620:lucky2004@cluster0.qxt6m4c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 db = client['cycle_rental_db']
 cycles_collection = db['cycles']
 users_collection = db['users']
