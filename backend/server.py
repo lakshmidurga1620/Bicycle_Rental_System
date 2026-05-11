@@ -8,10 +8,10 @@ import datetime
 from functools import wraps
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://localhost:3001"]}})
 
 # Connect to MongoDB
-client = MongoClient('mongodb+srv://lakshmidurga1620:lucky2004@cluster0.qxt6m4c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('mongodb+srv://LakshmiS:LakshmiS@cluster0.ezz4vj1.mongodb.net')
 db = client['cycle_rental_db']
 cycles_collection = db['cycles']
 users_collection = db['users']
